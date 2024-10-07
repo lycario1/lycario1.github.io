@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>IV Probability Calculator</title></head>
-<body><h1>IV Probability Calculator</h1>
+<title>Pokemon IV Breeding Probability Calculator</title>
+<link rel="icon" 
+      type="image/png" 
+      href="destinyknot.png">
+</head>
+
+<h2><img src="destinyknot.png"> Pokemon IV Breeding Probability Calculator <img src="egg.png"></h2>
+This calculator is for Destiny Knot breeding in Pokemon Generations 6-8 (XY, ORAS, SunMoon, SwordShield).<br>
+See the <a href="faq.html">FAQ</a> for more info.<br><br>
+
+Check the boxes of the 31 IVs that you are breeding for.<br>
+
 <form enctype="multipart/form-data" method="post" name="para">
 <table>
-<tbody><tr>
+<tr>
 <th></th>
 <th>HP</th>
 <th>Atk</th>
@@ -43,9 +52,9 @@
 <td><input type="checkbox" name="goal[]" value="Spd"></td>
 
 </tr>
-</tbody></table>
+</table>
 
-<table><tbody><tr>
+<table><tr>
 <th></th>
 <th>Gender</th>
 <th>Ability</th>
@@ -81,12 +90,14 @@
  </select> 
 </td>
 </tr>
-</tbody></table>
+</table>
 
 <input type="submit" value="Calculate">
 </form>
+<br>
 <div id="result">
 </div>
+</body></html>
 <script>
 var form = document.forms.namedItem("para");
 form.addEventListener('submit', function(ev) {
@@ -103,4 +114,5 @@ form.addEventListener('submit', function(ev) {
 
   ev.preventDefault();
 }, false);
-</script></body></html>
+</script>
+<body>
